@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import { handleInputChange,
          handleButtonClick,
          handleRemoveListItemElement } from './actions';
-import {Title} from './Title';
+import {Title, SubTitle} from './Title';
 import {TodoInput} from './TodoInput';
 import {TodoButton} from './TodoButton';
 import ListItem from './ListItem';
@@ -28,7 +28,7 @@ class App extends Component {
                 handleRemoveListItemElement={this.props.handleRemoveListItemElement}/>) 
           }
         </ul>
-        <h2>Completados</h2>
+        <SubTitle name={"Completados"} />
         
       </div>
     );
